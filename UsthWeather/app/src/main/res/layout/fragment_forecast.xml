@@ -1,34 +1,227 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#200000FF"
-    android:layout_margin="16dp"
-    android:padding="16dp"
-    android:gravity="center"
     tools:context=".ForecastFragment">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
-
+        android:layout_marginBottom="4dp"
+        android:background="#00008b">
 
         <TextView
-            android:id="@+id/day1"
-            android:layout_width="wrap_content"
+            android:layout_width="225dp"
             android:layout_height="wrap_content"
-            android:text="Monday" />
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:text="USTH Weather"
+            android:textSize="30dp"
+            android:layout_marginRight="30dp"/>
 
         <ImageView
-            android:id="@+id/pic1"
-            android:layout_width="100px"
-            android:layout_height="wrap_content"
-            android:src="@drawable/sunnyrain_7226910"/>
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/refresh_3">
 
+        </ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/setting_3">
+        </ImageView>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="651dp"
+        android:layout_margin="16dp"
+        android:background="#200000FF"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <!-- Monday and Tuesday weather data in the same parent LinearLayout -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/day1"
+                android:layout_width="73dp"
+                android:layout_height="93dp"
+                android:gravity="center"
+                android:text="Monday" />
+
+            <ImageView
+                android:id="@+id/pic1"
+                android:layout_width="91dp"
+                android:layout_height="36dp"
+                android:src="@drawable/sunnyrain_7226910" />
+
+            <TextView
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Scattered rain \n25-27°C" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/day2"
+                android:layout_width="73dp"
+                android:layout_height="93dp"
+                android:gravity="center"
+                android:text="Tuesday" />
+
+            <ImageView
+                android:id="@+id/pic2"
+                android:layout_width="91dp"
+                android:layout_height="36dp"
+                android:src="@drawable/sunnyrain_7226910" />
+
+            <TextView
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Scattered rain \n25-27°C" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/day3"
+                android:layout_width="73dp"
+                android:layout_height="93dp"
+                android:gravity="center"
+                android:text="Wednesday" />
+
+            <ImageView
+                android:id="@+id/pic3"
+                android:layout_width="91dp"
+                android:layout_height="36dp"
+                android:src="@drawable/sunnyrain_7226910" />
+
+            <TextView
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Scattered rain \n25-27°C" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/day4"
+                android:layout_width="73dp"
+                android:layout_height="93dp"
+                android:gravity="center"
+                android:text="Thursday" />
+
+            <ImageView
+                android:id="@+id/pic4"
+                android:layout_width="91dp"
+                android:layout_height="36dp"
+                android:src="@drawable/sunnyrain_7226910" />
+
+            <TextView
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Scattered rain \n25-27°C" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day5"
+                android:layout_width="73dp"
+                android:layout_height="93dp"
+                android:gravity="center"
+                android:text="Friday" />
+
+            <ImageView
+                android:id="@+id/pic5"
+                android:layout_width="91dp"
+                android:layout_height="36dp"
+                android:src="@drawable/sunnyrain_7226910" />
+
+            <TextView
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Scattered rain \n25-27°C" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day6"
+                android:layout_width="73dp"
+                android:layout_height="93dp"
+                android:gravity="center"
+                android:text="Saturday" />
+
+            <ImageView
+                android:id="@+id/pic6"
+                android:layout_width="91dp"
+                android:layout_height="36dp"
+                android:src="@drawable/sunnyrain_7226910" />
+
+            <TextView
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Scattered rain \n25-27°C" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day7"
+                android:layout_width="73dp"
+                android:layout_height="93dp"
+                android:gravity="center"
+                android:text="Sunday" />
+
+            <ImageView
+                android:id="@+id/pic7"
+                android:layout_width="91dp"
+                android:layout_height="36dp"
+                android:src="@drawable/sunnyrain_7226910" />
+
+            <TextView
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Scattered rain \n25-27°C" />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
