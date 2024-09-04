@@ -19,7 +19,6 @@ public class WeatherActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_weather);
         View main = findViewById(R.id.main);
-        main.setBackgroundColor(0xFFFF0000);
         ForecastFragment firstFragment = new ForecastFragment();
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.main, firstFragment)

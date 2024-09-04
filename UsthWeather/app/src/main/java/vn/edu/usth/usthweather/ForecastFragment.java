@@ -63,10 +63,10 @@ public class ForecastFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_forecast, container, false);
-        view.setBackgroundColor(0x2000FF00);
+        //view.setBackgroundColor(0x2000FF00);
 
 
-        LinearLayout weather = new LinearLayout(getContext());
+       /* LinearLayout weather = new LinearLayout(getContext());
         weather.setOrientation(LinearLayout.VERTICAL);
         TextView t1 = new TextView(getContext());
         t1.setText("Thursday");
@@ -76,6 +76,7 @@ public class ForecastFragment extends Fragment {
         weather.addView(t1);
         weather.addView(i1);
 
-        return weather;
+        return weather;*/
+        return view;
     }
 }
