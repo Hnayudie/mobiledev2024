@@ -77,6 +77,5 @@ public class ForecastFragment extends Fragment {
         weather.addView(i1);
 
         return weather;
-
     }
 }
