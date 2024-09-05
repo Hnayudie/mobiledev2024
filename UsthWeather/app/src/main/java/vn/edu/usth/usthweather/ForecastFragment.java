@@ -19,7 +19,7 @@ import androidx.appcompat.widget.AppCompatImageButton;
 
 
 public class ForecastFragment extends Fragment {
-    private Button button1 ;
+    
 
 
     @Override
