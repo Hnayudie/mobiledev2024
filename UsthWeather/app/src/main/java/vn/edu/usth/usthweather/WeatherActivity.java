@@ -1,5 +1,6 @@
 package vn.edu.usth.usthweather;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,14 +11,19 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+
 public class WeatherActivity extends AppCompatActivity {
     private static final String TAG = "Weather Activity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_weather);
         Log.i(TAG, "onCreate: ");
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_weather);
         View main = findViewById(R.id.main);
         ForecastFragment firstFragment = new ForecastFragment();
         getSupportFragmentManager().beginTransaction()
