@@ -34,22 +34,6 @@ public class ForecastFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_forecast, container, false);
 
-        ImageButton button1 = view.findViewById(R.id.button1);
-        ImageButton button2 = view.findViewById(R.id.button2);
-
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getActivity(), "Button clicked", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getActivity(), "Button clicked", Toast.LENGTH_SHORT).show();
-            }
-        });
 
 
         //view.setBackgroundColor(0x2000FF00);

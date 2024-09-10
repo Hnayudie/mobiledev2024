@@ -25,6 +25,24 @@ public class WeatherActivity extends AppCompatActivity {
         Log.i(TAG, "onCreate: ");
         EdgeToEdge.enable(this);
         View main = findViewById(R.id.main);
+
+        ImageButton button1 = findViewById(R.id.button1);
+        ImageButton button2 = findViewById(R.id.button2);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(WeatherActivity.this, "Button clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(WeatherActivity.this, "Button clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         ForecastFragment firstFragment = new ForecastFragment();
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.main, firstFragment)
@@ -34,6 +52,11 @@ public class WeatherActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        ForecastFragment secondFragment = new ForecastFragment();
+        getSupportFragmentManager().beginTransaction()
+                .add(R.id.main, secondFragment)
+                .commit();
     }
     @Override
     protected void onStart() {

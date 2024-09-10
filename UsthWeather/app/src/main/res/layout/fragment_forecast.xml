@@ -7,73 +7,33 @@
     android:orientation="vertical"
     tools:context=".ForecastFragment">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal"
-        android:layout_marginBottom="4dp"
-        android:background="#00008b">
-
-        <TextView
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="top"
-            android:gravity="center|left"
-            android:text="USTH Weather"
-            android:textSize="30sp"
-
-            android:textColor="@color/white" />
-
-        <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/refresh_3"
-            android:background="#00008b"
-            android:id="@+id/button1"
-            android:contentDescription="Refresh"
-            app:tint="@color/white">
-
-
-
-        </ImageButton>
-
-        <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:background="#00008b"
-            android:src="@drawable/setting_4"
-            android:id="@+id/button2"
-            android:contentDescription="Setting"
-            app:tint="@color/white">
-        </ImageButton>
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="651dp"
-        android:layout_margin="16dp"
+        android:layout_height="448dp"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
         android:background="#200000FF"
-        android:orientation="vertical"
-        android:layout_gravity="center">
+        android:orientation="vertical">
 
-        <!-- Monday and Tuesday weather data in the same parent LinearLayout -->
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:layout_height="58dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/day1"
                 android:layout_width="100dp"
-                android:layout_height="93dp"
+                android:layout_height="64dp"
                 android:gravity="center"
-                android:text="Monday" />
+                android:text="Mon"
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/pic1"
                 android:layout_width="91dp"
-                android:layout_height="36dp"
+                android:layout_height="50dp"
                 android:src="@drawable/sunnyrain_7226910" />
 
             <TextView
@@ -85,21 +45,22 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:layout_height="58dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/day2"
                 android:layout_width="100dp"
-                android:layout_height="93dp"
+                android:layout_height="64dp"
                 android:gravity="center"
-                android:text="Tuesday" />
+                android:text="Tue"
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/pic2"
                 android:layout_width="91dp"
-                android:layout_height="36dp"
+                android:layout_height="50dp"
                 android:src="@drawable/sunnyrain_7226910" />
 
             <TextView
@@ -111,21 +72,22 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:layout_height="58dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/day3"
                 android:layout_width="100dp"
-                android:layout_height="93dp"
+                android:layout_height="64dp"
                 android:gravity="center"
-                android:text="Wednesday" />
+                android:text="Wed"
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/pic3"
                 android:layout_width="91dp"
-                android:layout_height="36dp"
+                android:layout_height="50dp"
                 android:src="@drawable/sunnyrain_7226910" />
 
             <TextView
@@ -137,21 +99,22 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:layout_height="58dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/day4"
                 android:layout_width="100dp"
-                android:layout_height="93dp"
+                android:layout_height="64dp"
                 android:gravity="center"
-                android:text="Thursday" />
+                android:text="Thu"
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/pic4"
                 android:layout_width="91dp"
-                android:layout_height="36dp"
+                android:layout_height="50dp"
                 android:src="@drawable/sunnyrain_7226910" />
 
             <TextView
@@ -163,20 +126,21 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="58dp"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/day5"
                 android:layout_width="100dp"
-                android:layout_height="93dp"
+                android:layout_height="64dp"
                 android:gravity="center"
-                android:text="Friday" />
+                android:text="Fri"
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/pic5"
                 android:layout_width="91dp"
-                android:layout_height="36dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:src="@drawable/sunnyrain_7226910" />
 
@@ -189,20 +153,21 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="58dp"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/day6"
                 android:layout_width="100dp"
-                android:layout_height="93dp"
+                android:layout_height="64dp"
                 android:gravity="center"
-                android:text="Saturday" />
+                android:text="Sat"
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/pic6"
                 android:layout_width="91dp"
-                android:layout_height="36dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:src="@drawable/sunnyrain_7226910" />
 
@@ -215,20 +180,21 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="58dp"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/day7"
                 android:layout_width="100dp"
-                android:layout_height="93dp"
+                android:layout_height="64dp"
                 android:gravity="center"
-                android:text="Sunday" />
+                android:text="Sun"
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/pic7"
                 android:layout_width="91dp"
-                android:layout_height="36dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:src="@drawable/sunnyrain_7226910" />
 
