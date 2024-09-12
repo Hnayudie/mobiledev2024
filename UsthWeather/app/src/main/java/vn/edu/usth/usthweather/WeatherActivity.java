@@ -10,6 +10,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.tabs.TabLayout;
+
+import vn.edu.usth.usthweather.Adapter;
 
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -43,20 +49,13 @@ public class WeatherActivity extends AppCompatActivity {
             }
         });
 
-        ForecastFragment firstFragment = new ForecastFragment();
-        getSupportFragmentManager().beginTransaction()
-                .add(R.id.main, firstFragment)
-                .commit();
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        ViewPager viewPager = findViewById(R.id.viewpager);
+        PagerAdapter adapter = new Adapter(getSupportFragmentManager());
+        viewPager.setOffscreenPageLimit(3);
+        viewPager.setAdapter(adapter);
 
-        ForecastFragment secondFragment = new ForecastFragment();
-        getSupportFragmentManager().beginTransaction()
-                .add(R.id.main, secondFragment)
-                .commit();
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
+        tabLayout.setupWithViewPager(viewPager);
     }
     @Override
     protected void onStart() {
@@ -81,8 +80,8 @@ public class WeatherActivity extends AppCompatActivity {
         super.onStop();
         Log.i(TAG, "onStop: ");
     }
-    
-    @Override 
+
+    @Override
     protected  void onDestroy() {
         super.onDestroy();
         Log.i(TAG, "onDestroy: ");

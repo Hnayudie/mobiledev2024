@@ -19,7 +19,7 @@ import androidx.appcompat.widget.AppCompatImageButton;
 
 
 public class ForecastFragment extends Fragment {
-    
+
 
 
     @Override
@@ -52,6 +52,11 @@ public class ForecastFragment extends Fragment {
 
         return weather;*/
         return view;
+    }
+
+    public static ForecastFragment newInstance() {
+        ForecastFragment frag_layout3 = new ForecastFragment();
+        return frag_layout3;
     }
 
 
