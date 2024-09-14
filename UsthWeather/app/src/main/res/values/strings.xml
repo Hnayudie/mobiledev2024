@@ -3,8 +3,8 @@
     <string name="refresh">Refresh</string>
     <string name="setting">Setting</string>
     <string name="paris">Paris</string>
-    <string name="hanoi">Hà Nội</string>
-    <string name="hcmc">Hồ Chí Minh</string>
+    <string name="hanoi">HaNoi</string>
+    <string name="hcmc">HoChiMinnh</string>
     <string name="mon">Mon</string>
     <string name="tue">Tue</string>
     <string name="wed">Wed</string>

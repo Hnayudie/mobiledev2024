@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">USTH Weather</string>
+    <string name="weather1">12C \nCloudy</string>
+    <string name="usth_weather">USTH Weather</string>
+    <string name="refresh">Refresh</string>
+    <string name="setting">Cài đặt</string>
+    <string name="paris">Paris</string>
+    <string name="hanoi">Hà Nội</string>
+    <string name="hcmc">Hồ Chí Minh</string>
+    <string name="mon">Thứ 2</string>
+    <string name="tue">Thứ 3</string>
+    <string name="wed">Thứ 4</string>
+    <string name="thu">Thứ 5</string>
+    <string name="fri">Thứ 6</string>
+    <string name="sat">Thứ 7</string>
+    <string name="sun">Chủ nhật</string>
+    <string name="weather2">mưa rải rác \\n25~27°C</string>
+</resources>
