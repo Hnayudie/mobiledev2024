@@ -1,5 +1,19 @@
 <resources>
+   <string name="usth_weather">USTH Weather</string>
+    <string name="refresh">Refresh</string>
+    <string name="setting">Setting</string>
+    <string name="paris">Paris</string>
+    <string name="hanoi">Hà Nội</string>
+    <string name="hcmc">Hồ Chí Minh</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="sun">Sun</string>
+    <string name="weather1">12C \nCloudy</string>
+    <string name="weather2">Scattered rain \n25~27°C</string>
     <string name="app_name">USTH Weather</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

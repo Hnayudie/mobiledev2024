@@ -19,7 +19,7 @@
             android:id="@+id/relativeLayout"
             android:layout_width="380dp"
             android:layout_height="246dp"
-            android:background="#acd8a7"
+            android:background="@color/light_green"
             android:layout_gravity="center"
             tools:ignore="MissingConstraints">
 
@@ -34,7 +34,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="12C \nCloudy"
+                android:text="@string/weather1"
                 android:textColor="#000000"
                 android:textSize="16sp"
                 android:layout_alignParentStart="true"
@@ -44,7 +44,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Paris"
+                android:text="@string/paris"
                 android:textColor="#000000"
                 android:textSize="16sp"
                 android:layout_alignParentRight="true"
@@ -60,7 +60,7 @@
         android:layout_weight="2"
         android:layout_gravity="center"
         android:layout_margin="1dp"
-        android:background="#200000FF"
+        android:background="@color/light_blue"
         android:orientation="vertical">
 
         <LinearLayout
@@ -74,7 +74,7 @@
                 android:layout_width="100dp"
                 android:layout_height="64dp"
                 android:gravity="center"
-                android:text="Mon"
+                android:text="@string/mon"
                 android:textSize="18sp" />
 
             <ImageView
@@ -87,7 +87,7 @@
                 android:layout_width="188dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Scattered rain \n25-27°C" />
+                android:text="@string/weather2" />
         </LinearLayout>
 
         <LinearLayout
@@ -101,7 +101,7 @@
                 android:layout_width="100dp"
                 android:layout_height="64dp"
                 android:gravity="center"
-                android:text="Tue"
+                android:text="@string/tue"
                 android:textSize="18sp" />
 
             <ImageView
@@ -114,7 +114,7 @@
                 android:layout_width="188dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Scattered rain \n25-27°C" />
+                android:text="@string/weather2" />
         </LinearLayout>
 
         <LinearLayout
@@ -128,7 +128,7 @@
                 android:layout_width="100dp"
                 android:layout_height="64dp"
                 android:gravity="center"
-                android:text="Wed"
+                android:text="@string/wed"
                 android:textSize="18sp" />
 
             <ImageView
@@ -141,7 +141,7 @@
                 android:layout_width="188dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Scattered rain \n25-27°C" />
+                android:text="@string/weather2" />
         </LinearLayout>
 
         <LinearLayout
@@ -155,7 +155,7 @@
                 android:layout_width="100dp"
                 android:layout_height="64dp"
                 android:gravity="center"
-                android:text="Thu"
+                android:text="@string/thu"
                 android:textSize="18sp" />
 
             <ImageView
@@ -168,7 +168,7 @@
                 android:layout_width="188dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Scattered rain \n25-27°C" />
+                android:text="@string/weather2" />
         </LinearLayout>
 
         <LinearLayout
@@ -181,7 +181,7 @@
                 android:layout_width="100dp"
                 android:layout_height="64dp"
                 android:gravity="center"
-                android:text="Fri"
+                android:text="@string/fri"
                 android:textSize="18sp" />
 
             <ImageView
@@ -195,7 +195,7 @@
                 android:layout_width="188dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Scattered rain \n25-27°C" />
+                android:text="@string/weather2" />
         </LinearLayout>
 
         <LinearLayout
@@ -208,7 +208,7 @@
                 android:layout_width="100dp"
                 android:layout_height="64dp"
                 android:gravity="center"
-                android:text="Sat"
+                android:text="@string/sat"
                 android:textSize="18sp" />
 
             <ImageView
@@ -222,7 +222,7 @@
                 android:layout_width="188dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Scattered rain \n25-27°C" />
+                android:text="@string/weather2" />
         </LinearLayout>
 
         <LinearLayout
@@ -235,7 +235,7 @@
                 android:layout_width="100dp"
                 android:layout_height="64dp"
                 android:gravity="center"
-                android:text="Sun"
+                android:text="@string/sun"
                 android:textSize="18sp" />
 
             <ImageView
@@ -249,7 +249,7 @@
                 android:layout_width="188dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Scattered rain \n25-27°C" />
+                android:text="@string/weather2" />
         </LinearLayout>
     </LinearLayout>
 
