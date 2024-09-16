@@ -59,14 +59,14 @@
 
     </androidx.viewpager.widget.ViewPager>
 
-    <androidx.fragment.app.FragmentContainerView
+    <fragment
         android:id="@+id/weather_fragment"
         android:name="vn.edu.usth.usthweather.WeatherFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    </androidx.fragment.app.FragmentContainerView>
+    </fragment>
 
-    <androidx.fragment.app.FragmentContainerView
+    <fragment
         android:id="@+id/forecast_fragment"
         android:name="vn.edu.usth.usthweather.ForecastFragment"
         android:layout_width="match_parent"
@@ -74,6 +74,6 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="284dp">
 
-    </androidx.fragment.app.FragmentContainerView>
+    </fragment>
 
 </LinearLayout>
