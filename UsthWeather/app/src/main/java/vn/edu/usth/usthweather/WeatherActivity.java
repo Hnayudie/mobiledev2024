@@ -1,26 +1,30 @@
 package vn.edu.usth.usthweather;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.View;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.IOException;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 
-import vn.edu.usth.usthweather.Adapter;
+import android.media.MediaPlayer;
 
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
-import androidx.appcompat.app.AppCompatActivity;
+
+
 
 public class WeatherActivity extends AppCompatActivity {
     private static final String TAG = "Weather Activity";
@@ -36,7 +40,7 @@ public class WeatherActivity extends AppCompatActivity {
         ImageButton button2 = findViewById(R.id.button2);
 
         button1.setOnClickListener(new View.OnClickListener() {
-            @Override
+             @Override
             public void onClick(View view) {
                 Toast.makeText(WeatherActivity.this, "Button clicked", Toast.LENGTH_SHORT).show();
             }
@@ -56,6 +60,26 @@ public class WeatherActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.setupWithViewPager(viewPager);
+
+        try (InputStream inputStream = getResources().openRawResource(R.raw.audio);
+             OutputStream outputStream = new FileOutputStream(new File(getFilesDir(), "audio.mp3"))) {
+            byte[] buffer = new byte[1024];
+            int length;
+            while ((length = inputStream.read(buffer)) > 0) {
+                outputStream.write(buffer, 0, length);
+            }
+        } catch (IOException e) {
+            Log.e(TAG, "Error copying media file", e);
+        }
+
+        MediaPlayer mediaPlayer = new MediaPlayer();
+        try {
+            mediaPlayer.setDataSource(new File(getFilesDir(), "audio.mp3").getPath());
+            mediaPlayer.prepare();
+            mediaPlayer.start();
+        } catch (IOException e) {
+            Log.e(TAG, "Error playing media file", e);
+        }
     }
     @Override
     protected void onStart() {
