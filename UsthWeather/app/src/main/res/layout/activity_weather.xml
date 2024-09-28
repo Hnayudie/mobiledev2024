@@ -8,43 +8,17 @@
     android:orientation="vertical"
     tools:context=".WeatherActivity">
 
-    <LinearLayout
+
+    <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal"
-        android:background="@color/header_blue">
-
-        <TextView
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="top"
-            android:gravity="center|start"
-            android:text="@string/usth_weather"
-            android:textSize="30sp"
-            android:textColor="@color/white" />
-
-        <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/refresh_3"
-            android:background="@drawable/button_effect"
-            android:id="@+id/button1"
-            android:contentDescription="@string/refresh"
-            app:tint="@color/white">
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/tool_bar"
+        android:background="@color/header_blue"
+        app:title="@string/usth_weather"
+        app:titleTextColor="@color/white"
+        />
 
 
-        </ImageButton>
-
-        <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/button_effect"
-            android:src="@drawable/setting_4"
-            android:id="@+id/button2"
-            android:contentDescription="@string/setting"
-            app:tint="@color/white">
-        </ImageButton>
-    </LinearLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager"
